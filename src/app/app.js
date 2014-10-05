@@ -26,7 +26,7 @@ define([
     ]);
 
     app.config(['RestangularProvider', function (RestangularProvider) {
-        RestangularProvider.setBaseUrl('api/v1/');
+        RestangularProvider.setBaseUrl('config');
     }]);
 
     app.config(['$translateProvider', function ($translateProvider) {

@@ -1,25 +1,25 @@
 define([
     'angular',
-    'text!./companies/companies.tpl.html',
+    'text!./shops/shops.tpl.html',
 
     'angular-ui-router',
-    'app/companies/companies-list-ctrl'
-], function(angular, companiesListTemplate) {
+    'app/shops/shops-list-ctrl'
+], function(angular, shopsListTemplate) {
     'use strict';
 
     angular.module('MadeInUa.routes', [
             'ui.router',
 
-            'MadeInUa.CompaniesListCtrl'
+            'MadeInUa.ShopsListCtrl'
         ])
         .config(function($urlRouterProvider, $stateProvider) {
-            $urlRouterProvider.otherwise('/companies');
+            $urlRouterProvider.otherwise('/shops');
 
             $stateProvider
-                .state('companies', {
-                    url: '/companies',
-                    controller: 'CompaniesListCtrl',
-                    template: companiesListTemplate
+                .state('shops', {
+                    url: '/shops',
+                    controller: 'ShopsListCtrl',
+                    template: shopsListTemplate
                 });
         });
 });

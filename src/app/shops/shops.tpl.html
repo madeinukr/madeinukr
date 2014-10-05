@@ -1,0 +1,9 @@
+<div>
+  <h1>Shops</h1>
+  <div ng-repeat="shop in listOfShops"
+       style="float: left">
+    <img ng-src="{{shop.images.thumbnail}}" width="256" height="256"/>
+    <br/>
+    <span>{{shop.name}}</span>
+  </div>
+</div>
