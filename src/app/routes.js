@@ -8,7 +8,9 @@ define([
     'use strict';
 
     angular.module('MadeInUa.routes', [
-            'ui.router'
+            'ui.router',
+
+            'MadeInUa.CompaniesListCtrl'
         ])
         .config(function($urlRouterProvider, $stateProvider) {
             $urlRouterProvider.otherwise('/companies');
