@@ -15,7 +15,8 @@
     "ua",
     "angularjs",
     "goods",
-    "market"
+    "market",
+    "revolution"
   ],
   "license": "MIT",
   "ignore": [
@@ -24,5 +25,21 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "angular": "~1.2.26",
+    "angular-animate": "~1.2.26",
+    "angular-bootstrap": "~0.11.2",
+    "angular-busy": "~4.1.0",
+    "angular-sanitize": "~1.2.26",
+    "angular-translate": "~2.4.0",
+    "angular-translate-loader-static-files": "~2.4.0",
+    "angular-ui-router": "~0.2.11",
+    "AngularJS-Toaster": "~0.4.8",
+    "bootstrap-social": "~4.8.0",
+    "lodash": "~2.4.1",
+    "restangular": "~1.4.0",
+    "requirejs": "~2.1.15",
+    "requirejs-text": "~2.0.12"
+  }
 }
