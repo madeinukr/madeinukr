@@ -40,6 +40,7 @@
     "lodash": "~2.4.1",
     "restangular": "~1.4.0",
     "requirejs": "~2.1.15",
-    "requirejs-text": "~2.0.12"
+    "requirejs-text": "~2.0.12",
+    "bootswatch": "~3.2.0+4"
   }
 }
