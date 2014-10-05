@@ -1,0 +1,28 @@
+{
+  "name": "made in ua",
+  "version": "0.0.1",
+  "homepage": "https://github.io",
+  "authors": [
+    "Eugene Krevenets <hyzhak@ya.ru>"
+  ],
+  "description": "all that made in ukraine with a test of revolution",
+  "main": "index.html",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "ukraine",
+    "ua",
+    "angularjs",
+    "goods",
+    "market"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
