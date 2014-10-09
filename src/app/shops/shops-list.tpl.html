@@ -6,11 +6,13 @@
     <p><button class="btn btn-primary">Add Free</button> or <button class="btn btn-primary">Recommend Other</button></p>
   </div>
   <div class="row">
-    <div class="col-sm-6 col-md-4 col-lg-3 text-center"
-        ng-repeat="shop in listOfShops">
-      <img ng-src="{{shop.images.thumbnail}}" width="256" height="256"/>
-      <br/>
-      <span>{{shop.name}}</span>
-    </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 text-center"
+          ng-repeat="shop in listOfShops">
+        <a ui-sref="shop({shopId: shop.id})" href="#">
+          <img ng-src="{{shop.images.thumbnail}}" width="256" height="256"/>
+          <br/>
+          <span>{{shop.name}}</span>
+        </a>
+      </div>
   </div>
 </div>

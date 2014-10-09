@@ -1,0 +1,60 @@
+<div class="container">
+  <a ui-sref="shops" class="btn btn-default"><i class="fa fa-caret-left"></i> Shops</a>
+  <br/>
+  <br/>
+  <div class="jumbotron">
+    <img ng-src="{{shop.images.thumbnail}}" style="float: left"/>
+    <h1>{{shop.name}}</h1>
+    <p>{{shop.description}}</p>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <h1>Payments</h1>
+      <div ng-show="shop.payment.liqPay">LiqPay</div>
+    </div>
+    <div class="col-md-6">
+      <h1>Contacts</h1>
+      <div class="row">
+        <div class="col-sm-6" ng-show="shop.contacts.email">
+          email: <a ng-href="email:{{shop.contacts.email}}" target="_blank">{{shop.contacts.email}}</a>
+        </div>
+        <div class="col-sm-6" ng-show="shop.contacts.phones">
+          phones: <span ng-repeat="phone in shop.contacts.phones">{{phone}}<br/></span>
+        </div>
+        <div class="col-sm-6" ng-show="shop.contacts.url">
+          page: <a ng-href="{{shop.contacts.url}}" target="_blank">{{shop.contacts.url}}</a>
+        </div>
+      </div>
+
+      <div class="social"
+           style="padding-top: 16px">
+        <div social-contacts="shop.contacts.social"></div>
+        <!--<a class="btn btn-social-icon btn-facebook"
+           ng-href="{{shop.contacts.fb}}"
+           target="_blank">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a class="btn btn-social-icon btn-instagram"
+           ng-href="{{shop.contacts.ig}}"
+           target="_blank">
+          <i class="fa fa-instagram"></i>
+        </a>-->
+      </div>
+    </div>
+    <div class="col-md-12"
+         ng-show="shop.payments.offline">
+      <h1>Shops</h1>
+      <dl class="dl-horizontal">
+        <span ng-repeat="offlineShop in shop.payments.offline">
+          <dt>{{offlineShop.name}}</dt>
+          <dd>
+            <div>
+              {{offlineShop.address}}
+            </div>
+            <div social-contacts="offlineShop.contacts.social"></div>
+          </dd>
+        </span>
+      </dl>
+    </div>
+  </div>
+</div>
